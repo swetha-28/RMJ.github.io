@@ -1,0 +1,11 @@
+
+    <div class="header">
+        <ul *ngFor="let item of services">
+            <li [routerLink]="item.url" class="header-title">{{item.title}}</li>
+        </ul>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+
+    </div>
+
